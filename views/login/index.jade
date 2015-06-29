@@ -1,0 +1,19 @@
+extend ../layout
+
+block content
+
+  h1= title
+  p.error= errorMessage
+  
+  
+  form(method="post", action='/login/account', name="userLoginInput")
+    p
+    p Please Enter Your Username Here: 
+    input(type="text", name="userNameLoginInput", maxLength="20")
+    p
+    p Please Enter your Password Here:
+    input(type="text", name="userPasswordLoginInput", maxLength="20")
+    p
+    p
+    input(type='submit', name="loginSubmitbutton", value="Submit!")
+  

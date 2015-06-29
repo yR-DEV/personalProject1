@@ -1,0 +1,10 @@
+extend ../layout
+
+block content
+
+  h1= title
+  p HELLO
+  p= userName.userName
+  
+  form(action="/login/account", method="post", name="newListForm")
+    input(type="submit", name="newUserListButton", value="New Form!")

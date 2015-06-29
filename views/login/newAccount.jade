@@ -1,0 +1,22 @@
+extend ../layout
+
+block content
+
+  h1= title
+  
+  ul
+    for error in theErrorArr
+      li.error= error
+
+  form(name="newAccountForm", method="post", action="/login")
+    p Enter Your Desired Username:
+    input(type="text", name="userNameCreateInput", placeholder="Desired Username: ", maxLength="30")
+    p
+    p Enter Your Desired Password:
+    input(type="text", name="userPasswordCreateInput1", placeholder="Desired Password: ", maxLength="30")
+    p
+    p Enter Your Password Again Please:
+    input(type="text", name="userPasswordCreateInput2", placeholder="Enter Password Again: ")
+    p
+    p 
+    input(type="submit", name="newAccountCreateButton", value="Submit!")
