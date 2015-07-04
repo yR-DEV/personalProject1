@@ -1,0 +1,14 @@
+extend layout
+
+block content
+    body(onload='init()')
+      canvas#backgroundCanvas(,='', height='600', width='800')
+        | If the game doesnt load you need to try a different browser
+      |     
+      canvas#mainCanvas(,='', height='600', width='800')
+      |     
+      canvas#bikeCanvas(,='', height='600', width='800')
+      |  
+      div#score YER SCORE: 
+        span.score
+      script(src='../public/javascripts/bikerRevenge.js', type='text/javascript')
